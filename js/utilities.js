@@ -1,11 +1,13 @@
 
 function getInputValueById(id){
       const inputValue = document.getElementById(id).value
-
-      return parseFloat(inputValue)
+      const inputValueNumber = parseFloat(inputValue)
+      return inputValueNumber
 }
-function getValueById(id){
-      const inputValue = document.getElementById(id).innerText
 
-      return parseFloat(inputValue)
+function  getTextFieldValue(id){
+      const textValue = document.getElementById(id).innerText
+      const textNumber = parseFloat(textValue)
+
+      return textNumber;  
 }
