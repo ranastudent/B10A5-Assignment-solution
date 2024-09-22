@@ -7,10 +7,100 @@
       <title>B10A5-Assignment</title>
       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
       <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+            tailwind.config = {
+                  theme: {
+                        extend: {
+                              colors: {
+                                    'btn-primary': '#B4F461',
+                                    'nav-bg'     : '#F9F7F3',
+                                    
+                              }
+                        }
+                  }
+            }
+      </script>
 </head>
 
 <body>
+      <header>
+            <nav>
+                  <div class="flex justify-around mt-6 bg-nav-bg w-11/12 mx-auto">
+                        <button id="blog-btn" class="bg-btn-primary btn btn-md">Blog</button>
+                        <div class="flex">
+                              <img src="./assets/logo.png" alt="">
+                              <p class="font-semibold text-xl">Donate Bangladesh</p>
+                        </div>
+                        <div class="flex gap-1">
+                              <img class="w-4 h-4" src="./assets/coin.png" alt="">
+                              <p><span>5500</span> BDT</p>
+                        </div>
+                  </div>
+                  <div id="banner" class="flex  justify-center my-10 gap-5 ">
+                        <button class="btn btn-lg bg-btn-primary">Donation</button>
+                        <button class="btn btn-lg">History</button>
+                  </div>
+            </nav>
 
+      </header>
+      <main>
+            <!-- Donation Noakhali start -->
+                  <div class="w-8/12 mx-auto space-x-2 grid lg:grid-cols-2 sm:grid-cols-1 ">
+                        <img class="" src="./assets/noakhali.png" alt="">
+                        <div>
+                              <div class="w-40 h-10 bg-nav-bg    flex ">
+                                    <img src="./assets/coin.png" alt="">
+                                    <p class=""><span>0</span> BDT</p> 
+                                     
+                                </div>
+                                <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                                <p class="mt-4  text-xl font-normal"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                                <input id="input-donation" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs my-5" />
+                                <button class="btn btn-block bg-btn-primary">Donate Now</button>
+                        </div>
+
+                  </div>
+                  <!-- Donation Noakhali end -->
+
+                  <!-- Donation Fenni start -->
+                  <div class="w-8/12 my-5 mx-auto space-x-2 grid lg:grid-cols-2 sm:grid-cols-1 ">
+                        <img class="" src="./assets/feni.png" alt="">
+                        <div>
+                              <div class="w-40 h-10 bg-nav-bg    flex ">
+                                    <img src="./assets/coin.png" alt="">
+                                    <p class=""><span>0</span> BDT</p> 
+                                     
+                                </div>
+                                <h1 class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+                                <p class=" text-xl font-normal"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                                <input id="input-donation" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs my-2" />
+                                <button class="btn btn-block bg-btn-primary">Donate Now</button>
+                        </div>
+
+                  </div>
+                  <!-- Donation Fenni end -->
+
+                  <!-- Donation injures start -->
+                  <div class="w-8/12 mx-auto space-x-2 grid lg:grid-cols-2 sm:grid-cols-1 p-8 ">
+                        <img class="" src="./assets/quota-protest.png" alt="">
+                        <div>
+                              <div class="w-40 h-10 bg-nav-bg    flex ">
+                                    <img src="./assets/coin.png" alt="">
+                                    <p class=""><span>0</span> BDT</p> 
+                                     
+                                </div>
+                                <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                                <p class="  text-xl font-normal"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                                <input id="input-donation" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs my-5 " />
+                                <button class="btn btn-block bg-btn-primary">Donate Now</button>
+                        </div>
+
+                  </div>
+                  <!-- Donation injures end -->
+                  
+      </main>
+      
+      <script src="./tailwind.config.js"></script>
 </body>
 
 </html>
