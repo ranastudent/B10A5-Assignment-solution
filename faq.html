@@ -18,7 +18,7 @@
                   <input type="radio" name="my-accordion-3" checked="checked" />
                   <div class="collapse-title text-xl font-medium">What is DOM?</div>
                   <div class="collapse-content">
-                        <p>The Document Object Model (DOM) is a programming interface for web documents. It represents
+                        <p>The Document Object Model (DOM) is a programming interface for web documents. <br>It represents
                               the structure of a document as a tree of objects, where each node is an object
                               representing a part of the document</p>
                   </div>
@@ -27,12 +27,12 @@
                   <input type="radio" name="my-accordion-3" />
                   <div class="collapse-title text-xl font-medium">How do you select an element from the dom</div>
                   <div class="collapse-content">
-                        <p> 1. getElementById: Selects an element by its ID.
-                              const element = document.getElementById('myElementId');
-                              2. getElementsByClassName: Selects all elements with a specific class name.
-                              const elements = document.getElementsByClassName('myClassName');
-                              3.getElementsByTagName: Selects all elements with a specific tag name.
-                              const elements = document.getElementsByTagName('div');
+                        <p> 1. getElementById: Selects an element by its <br>
+                              const element = document.getElementById('myElementId');<br>
+                              2. getElementsByClassName: Selects all elements with a specific class name.<br>
+                              const elements = document.getElementsByClassName('myClassName');<br>
+                              3.getElementsByTagName: Selects all elements with a specific tag name.<br>
+                              const elements = document.getElementsByTagName('div');<br>
 
                         </p>
                   </div>
@@ -43,10 +43,10 @@
                         why it is useful?</div>
                   <div class="collapse-content">
                         <p>Event delegation is a technique in JavaScript that leverages event bubbling to handle events
-                              at a higher level in the DOM tree than the element where the event originated. Instead of
+                              at a higher level in the DOM tree than the element where the event originated.<br> Instead of
                               adding event listeners to multiple child elements, you add a single event listener to a
                               parent element. This parent element can then manage all events that bubble up from its
-                              child elements.
+                              child elements.<br>
                               How Event Delegation Works
                               When an event occurs on an element, it bubbles up through its ancestors in the DOM tree.
                               For example, if you have a
@@ -68,25 +68,18 @@
 
                                     1.Benefits of Event Delegation
                                     Efficiency: Reduces the number of event listeners, which can improve performance,
-                                    especially with a large number of elements.
+                                    especially with a large number of elements.<br>
 
                                     2.Dynamic Content: Handles events for dynamically added elements without needing to
-                                    attach new event listeners.
+                                    attach new event listeners.<br>
 
-                                    3.Cleaner Code: Simplifies the code by managing events in a centralized location.
+                                    3.Cleaner Code: Simplifies the code by managing events in a centralized location.<br>
                                     </p>
                               </div>
                         </div>
                         
                   </div>
-                  <div class="collapse collapse-plus bg-base-200">
-                        <input type="radio" name="my-accordion-3" />
-                        <div class="collapse-title text-xl font-medium">Click to open this one and close others
-                        </div>
-                        <div class="collapse-content">
-                              <p>hello</p>
-                        </div>
-                  </div>
+                  
                   <div class="collapse collapse-plus bg-base-200">
                         <input type="radio" name="my-accordion-3" />
                         <div class="collapse-title text-xl font-medium">How do you manipulate an element's
@@ -94,36 +87,36 @@
                         </div>
                         <div class="collapse-content">
                               <p>Manipulating Attributes
-                                    1.Get an Attribute:
+                                    1.Get an Attribute:<br>
 
                                     let element = document.getElementById('myElement');
-                                    let attributeValue = element.getAttribute('attributeName');
+                                    let attributeValue = element.getAttribute('attributeName');<br>
 
-                                    2.Set an Attribute
+                                    2.Set an Attribute<br>
 
-                                    element.setAttribute('attributeName', 'newValue');
+                                    element.setAttribute('attributeName', 'newValue');<br>
 
-                                    3.Remove an Attribute
+                                    3.Remove an Attribute<br>
 
-                                    element.removeAttribute('attributeName');
+                                    element.removeAttribute('attributeName');<br>
 
 
-                                    Manipulating Styles
-                                    1.Change Inline Styles:
+                                    Manipulating Styles<br><br>
+                                    1.Change Inline Styles:<br>
 
-                                    element.style.color = 'red';
-                                    element.style.backgroundColor = 'blue';
+                                    element.style.color = 'red';<br>
+                                    element.style.backgroundColor = 'blue';<br>
 
-                                    2.Add or Remove CSS Classes
+                                    2.Add or Remove CSS Classes<br><br>
 
-                                    // Add a class
-                                    element.classList.add('newClass');
+                                    // Add a class<br>
+                                    element.classList.add('newClass');<br>
 
-                                    // Remove a class
-                                    element.classList.remove('oldClass');
+                                    // Remove a class<br>
+                                    element.classList.remove('oldClass');<br>
 
-                                    // Toggle a class
-                                    element.classList.toggle('activeClass');
+                                    // Toggle a class<br>
+                                    element.classList.toggle('activeClass');<br>
 
 
                               </p>
