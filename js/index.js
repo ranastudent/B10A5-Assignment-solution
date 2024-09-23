@@ -20,7 +20,20 @@ document.getElementById('donation-now-1').addEventListener('click', function () 
             document.getElementById('available-blance').innerText = balance - inputValue
 
       }
-      
+
+      const head = document.getElementById('head1').innerText
+
+
+      const historyItem = document.createElement('div')
+      historyItem.className = "bg-white p-3 rounded-md border-1 border-indigo-500"
+      historyItem.innerHTML = ` 
+                  <p class="text-2xl font-bold text-black-500">${amount + inputValue} Taka ${head}</p>
+                  <p class="text-xs text-gray-500">${new Date().toLocaleDateString()} - ${new Date().getHours()}</p>
+                  
+      `
+      const  historyContainar = document.getElementById('history-section');
+
+      historyContainar.insertBefore(historyItem, historyContainar.firstChild)
 
 })
 
@@ -44,6 +57,21 @@ document.getElementById('donation-now-2').addEventListener('click', function () 
 
       }
 
+      const head = document.getElementById('head1').innerText
+
+
+      const historyItem = document.createElement('div')
+      historyItem.className = "bg-white p-3 rounded-md border-1 border-indigo-500"
+      historyItem.innerHTML = ` 
+                  <p class="text-2xl font-bold text-black-500">${amount + inputValue} Taka ${head}</p>
+                  <p class="text-xs text-gray-500">${new Date().toLocaleDateString()} - ${new Date().getHours()}</p>
+                  
+      `
+      const historyContainar = document.getElementById('history-section');
+
+      historyContainar.insertBefore(historyItem, historyContainar.firstChild)
+
+
 })
 
 // event Listener for Quota-protester
@@ -66,11 +94,26 @@ document.getElementById('donation-now-3').addEventListener('click', function () 
 
       }
 
+      const head = document.getElementById('head1').innerText
+
+
+      const historyItem = document.createElement('div')
+      historyItem.className = "bg-white p-3 rounded-md border-1 border-indigo-500"
+      historyItem.innerHTML = ` 
+                  <p class="text-2xl font-bold text-black-500">${amount + inputValue} Taka ${head}</p>
+                  <p class="text-xs text-gray-500">${new Date().toLocaleDateString()} - ${new Date().getHours()}</p>
+                  
+      `
+      const historyContainar = document.getElementById('history-section');
+
+      historyContainar.insertBefore(historyItem, historyContainar.firstChild)
+
 })
 
 // btn functionally
 const donationBtn = document.getElementById('donation-btn')
 const historyBtn = document.getElementById('history-btn')
+
 //history btn functionally
  historyBtn.addEventListener('click', function () {
       // const donationBtn = document.getElementById('donation-btn')
@@ -78,12 +121,14 @@ const historyBtn = document.getElementById('history-btn')
       
       historyBtn.classList.add('bg-btn-primary')
 
-      document.getElementById('main').classList.add('hidden')
+      document.getElementById('main-div').classList.add('hidden')
+      document.getElementById('history-section').classList.remove('hidden')
 })
 //donation btn functionally
  donationBtn.addEventListener('click', function () {
       // const donationBtn = document.getElementById('donation-btn')
       historyBtn.classList.remove('bg-btn-primary')
       donationBtn.classList.add('bg-btn-primary')
-      document.getElementById('main').classList.remove('hidden')
+      document.getElementById('main-div').classList.remove('hidden')
+      
 })
