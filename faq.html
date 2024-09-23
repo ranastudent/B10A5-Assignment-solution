@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Faq Section</title>
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+      <header>
+            <h2 class="text-white text-2xl font-bold text-center my-10 bg-gray-400">The Faq Section?</h2>
+      </header>
+      <main class="mt-20">
+            <div class="collapse collapse-plus bg-base-200">
+                  <input type="radio" name="my-accordion-3" checked="checked" />
+                  <div class="collapse-title text-xl font-medium">What is DOM?</div>
+                  <div class="collapse-content">
+                        <p>The Document Object Model (DOM) is a programming interface for web documents. It represents
+                              the structure of a document as a tree of objects, where each node is an object
+                              representing a part of the document</p>
+                  </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+                  <input type="radio" name="my-accordion-3" />
+                  <div class="collapse-title text-xl font-medium">How do you select an element from the dom</div>
+                  <div class="collapse-content">
+                        <p> 1. getElementById: Selects an element by its ID.
+                              const element = document.getElementById('myElementId');
+                              2. getElementsByClassName: Selects all elements with a specific class name.
+                              const elements = document.getElementsByClassName('myClassName');
+                              3.getElementsByTagName: Selects all elements with a specific tag name.
+                              const elements = document.getElementsByTagName('div');
+
+                        </p>
+                  </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+                  <input type="radio" name="my-accordion-3" />
+                  <div class="collapse-title text-xl font-medium">What is event delegation in the context of the Dom,
+                        why it is useful?</div>
+                  <div class="collapse-content">
+                        <p>Event delegation is a technique in JavaScript that leverages event bubbling to handle events
+                              at a higher level in the DOM tree than the element where the event originated. Instead of
+                              adding event listeners to multiple child elements, you add a single event listener to a
+                              parent element. This parent element can then manage all events that bubble up from its
+                              child elements.
+                              How Event Delegation Works
+                              When an event occurs on an element, it bubbles up through its ancestors in the DOM tree.
+                              For example, if you have a
+                        <div> containing several buttons, you can add a single event listener to the <div> instead of
+                                    each button. Here’s a simple example:
+                                    <div id="parent">
+                                          <button>Button 1</button>
+                                          <button>Button 2</button>
+                                          <button>Button 3</button>
+                                    </div>
+
+                                    <script>
+                                          document.getElementById('parent').addEventListener('click', function (event) {
+                                                if (event.target.tagName === 'BUTTON') {
+                                                      console.log(event.target.innerText + ' was clicked');
+                                                }
+                                          });
+                                    </script>
+
+                                    1.Benefits of Event Delegation
+                                    Efficiency: Reduces the number of event listeners, which can improve performance,
+                                    especially with a large number of elements.
+
+                                    2.Dynamic Content: Handles events for dynamically added elements without needing to
+                                    attach new event listeners.
+
+                                    3.Cleaner Code: Simplifies the code by managing events in a centralized location.
+                                    </p>
+                              </div>
+                        </div>
+                        
+                  </div>
+                  <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">Click to open this one and close others
+                        </div>
+                        <div class="collapse-content">
+                              <p>hello</p>
+                        </div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">How do you manipulate an element's
+                              attributes and style using DOM?
+                        </div>
+                        <div class="collapse-content">
+                              <p>Manipulating Attributes
+                                    1.Get an Attribute:
+
+                                    let element = document.getElementById('myElement');
+                                    let attributeValue = element.getAttribute('attributeName');
+
+                                    2.Set an Attribute
+
+                                    element.setAttribute('attributeName', 'newValue');
+
+                                    3.Remove an Attribute
+
+                                    element.removeAttribute('attributeName');
+
+
+                                    Manipulating Styles
+                                    1.Change Inline Styles:
+
+                                    element.style.color = 'red';
+                                    element.style.backgroundColor = 'blue';
+
+                                    2.Add or Remove CSS Classes
+
+                                    // Add a class
+                                    element.classList.add('newClass');
+
+                                    // Remove a class
+                                    element.classList.remove('oldClass');
+
+                                    // Toggle a class
+                                    element.classList.toggle('activeClass');
+
+
+                              </p>
+                        </div>
+      </main>
+</body>
+
+</html>

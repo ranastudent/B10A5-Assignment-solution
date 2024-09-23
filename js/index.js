@@ -5,7 +5,7 @@
 
 document.getElementById('donation-now-1').addEventListener('click', function () {
 
-      const inputValue = getInputValueById('inpiut-donation-1')
+      const inputValue = getInputValueById('input-donation-1')
       const balance = getTextFieldValue('available-blance')
       const amount = getTextFieldValue('noakhali-amount')
 
@@ -122,7 +122,9 @@ const historyBtn = document.getElementById('history-btn')
       historyBtn.classList.add('bg-btn-primary')
 
       document.getElementById('main-div').classList.add('hidden')
-      document.getElementById('history-section').classList.remove('hidden')
+      // document.getElementById('history-section').classList.remove('hidden')
+      // document.getElementById('history-section').classList.toggle('hidden')
+
 })
 //donation btn functionally
  donationBtn.addEventListener('click', function () {
